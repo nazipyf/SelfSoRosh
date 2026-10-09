@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layoutDirection="rtl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Self SoRosh"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="● آماده"
+            android:textColor="@color/purple_light"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="18dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="@drawable/bg_card">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="ورود به حساب" android:textColor="@color/white"
+                android:textSize="18sp" android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="12dp"
+                android:hint="شماره تلفن"
+                android:inputType="phone"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
+                android:background="@drawable/bg_input"/>
+
+            <EditText
+                android:id="@+id/code"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="10dp"
+                android:hint="کد ورود"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
+                android:background="@drawable/bg_input"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_card">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="تنظیمات ارسال" android:textColor="@color/white"
+                android:textSize="18sp" android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/link"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="12dp"
+                android:hint="لینک گپ مقصد"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
+                android:background="@drawable/bg_input"/>
+
+            <EditText
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:gravity="top|right"
+                android:hint="متن پیام"
+                android:inputType="textMultiLine"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
+                android:background="@drawable/bg_input"/>
+
+            <EditText
+                android:id="@+id/seconds"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="10dp"
+                android:hint="فاصله زمانی (ثانیه)"
+                android:inputType="number"
+                android:text="20"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
+                android:background="@drawable/bg_input"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/start"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="شروع"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:background="@drawable/bg_start"/>
+
+            <Space android:layout_width="12dp" android:layout_height="1dp"/>
+
+            <Button
+                android:id="@+id/stop"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="توقف"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:background="@drawable/bg_stop"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/creator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ارتباط با سازنده  •  @Yaldaw_i"
+            android:textColor="@color/purple_light"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:padding="22dp"/>
+
+    </LinearLayout>
+</ScrollView>

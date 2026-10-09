@@ -1,0 +1,10 @@
+<resources>
+    <color name="black_bg">#09070D</color>
+    <color name="purple_dark">#3A155C</color>
+    <color name="purple">#8A3FFC</color>
+    <color name="purple_light">#B56CFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#AAA3B5</color>
+    <color name="green">#37D67A</color>
+    <color name="red">#E94B5F</color>
+</resources>
