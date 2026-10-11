@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.chaquo.python")
 }
 
 android {
@@ -13,6 +14,16 @@ android {
         targetSdk = 35
         versionCode = 1
         versionName = "0.1-test"
+
+        ndk {
+            abiFilters += "arm64-v8a"
+        }
+    }
+}
+
+chaquopy {
+    defaultConfig {
+        version = "3.13"
     }
 }
 
