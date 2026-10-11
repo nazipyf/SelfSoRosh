@@ -1,17 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-
     <application
-        android:theme="@style/Theme.SelfSoRosh"
-        android:label="Self SoRosh"
         android:allowBackup="true"
+        android:label="Self Telegram"
+        android:theme="@style/AppTheme"
         android:supportsRtl="true">
-
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -20,12 +12,5 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <service
-            android:name=".SendService"
-            android:exported="false"
-            android:stopWithTask="false"
-            android:foregroundServiceType="dataSync" />
-
     </application>
 </manifest>

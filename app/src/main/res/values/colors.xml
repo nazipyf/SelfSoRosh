@@ -1,10 +1,10 @@
 <resources>
-    <color name="black_bg">#09070D</color>
-    <color name="purple_dark">#3A155C</color>
-    <color name="purple">#8A3FFC</color>
-    <color name="purple_light">#B56CFF</color>
-    <color name="white">#FFFFFF</color>
-    <color name="gray">#AAA3B5</color>
-    <color name="green">#37D67A</color>
-    <color name="red">#E94B5F</color>
+    <color name="bg">#100E14</color>
+    <color name="panel">#211B2A</color>
+    <color name="purple">#8552C7</color>
+    <color name="purple_light">#D7B8FF</color>
+    <color name="text_main">#F4ECFF</color>
+    <color name="text_muted">#B9ADC8</color>
+    <color name="line">#40344D</color>
+    <color name="stop">#49384E</color>
 </resources>

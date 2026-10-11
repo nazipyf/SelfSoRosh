@@ -2,10 +2,4 @@
 build/
 **/build/
 local.properties
-*.bak
-*.bak2
-*.bak3
-*.before-chaquopy
-*.retry-backup
-build-log.txt
-build-chaquopy.log
+*.apk
