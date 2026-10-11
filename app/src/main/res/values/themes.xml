@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="Theme.SelfSoRosh" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Theme.SelfSoRosh" parent="AppTheme">
         <item name="android:fontFamily">sans</item>
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:statusBarColor">@color/black_bg</item>
