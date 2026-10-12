@@ -1,0 +1,39 @@
+name: Build Telegram TDLib Android
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-tdlib:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout app repository
+        uses: actions/checkout@v4
+
+      - name: Checkout official TDLib
+        uses: actions/checkout@v4
+        with:
+          repository: tdlib/td
+          path: tdlib-src
+          fetch-depth: 1
+
+      - name: Build TDLib for Android
+        working-directory: tdlib-src/example/android
+        run: |
+          docker build --output "$GITHUB_WORKSPACE/tdlib-artifacts" .
+
+      - name: Check build output
+        run: |
+          echo "===== TDLib build output ====="
+          find tdlib-artifacts -maxdepth 4 -type f -print
+
+      - name: Upload TDLib artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: TDLib-Android
+          path: tdlib-artifacts/
+          if-no-files-found: error
+          retention-days: 7
